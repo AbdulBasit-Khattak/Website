@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding:0 ;
+
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'open sans', sans-serif ;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing : antialiased !important ;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+a:hover,
+a:active{
+    text-decoration: none;
+}
+h1,
+h2,
+h4{
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+    line-height: 21px;
+
+}
+.btn{
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color:#ededed !important;
+    color: #3c3c3c !important;
+    border: 1px solid #fff !important;
+}
+/*-----------------------------DEfault Style -----------------------*/
+/*---------------------Navbar styling-------------*/
+
+
+.navbar {
+    background-color : #222220 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: -2px;
+    border-bottom : 2px solid #222220;
+}
+.navbar a:hover{
+    border-bottom: 2px solid #fff;
+}
+@media(max-width:768px){
+    .navbar a:hover{
+        border-bottom:none;
+    }
+}
+
+/*----------login box styling-------------*/
+
+#login-dp{
+    margin-top: 4px;
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+b{
+    font-weight: 400;
+
+}
+
+#login-dp .help-block{
+    font-size: 12px;
+}
+#login-dp .bottom{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+}
+#login-dp .social-buttons {
+    margin: 12px 0;
+
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group{
+    margin-bottom: 10px ;
+}
+.btn-fb{
+    color: #fff;
+    background-color: #3b5998;
+}
+.btn-fb:hover{
+    background-color: #496ebc !important;
+
+}
+.btn-tw{
+    color: #fff;
+    background-color: #55acee;
+}
+.btn-tw:hover{
+    background-color: #59b5fa !important;
+}
+#signup-btn{
+    background-color: #222220;
+    border: 0;
+    border-radius: 2px ;
+    height: 2.5en;
+}
+#signup-btn:hover{
+    background-color: #636363 !important;
+    color: #fff !important;
+}
+.social-buttons i{
+    margin-right: 5px;
+}
+
+@media (max-width:768px) {
+    #login-dp{
+        background-color:inherit;
+        color: #fff;
+
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none ;
+    }
+
+ 
+}
+
+/*----------header css begin here------------*/
+
+.header{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.8), rgba(24, 24, 24, 0.8)), url(../images/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg);
+    background-size: cover ;
+    background-position: center;
+    height: 100vh;
+}
+
+.header h1{
+    color: #fff;
+    text-align: center;
+    font-size:70px ;
+    margin-top: 250px;
+}
+.header h3{
+    color: #b9b9b9;
+    text-align: center;
+}
+.header span{
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+@media (max-width: 768px){
+    .header h1{
+        font-size: 50px;
+        margin-top: 260px;
+    }
+    .header h3{
+        font-size: 15px;
+    }
+}
+.flex-container{
+    display: flex !important;
+    border: 1px solid transparent !important;
+    justify-content: center;
+}
+.btn-grp{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+.flex-1{
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #d34747;
+    border: 0;
+}
+.flex-2{
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: #36a73a;
+    border: 0;
+}
+
+/*---------services css start here-----------*/
+
+.services{
+    padding: 80px;
+    text-align: center;
+
+}
+.services h2{
+    color: black;
+    font-size: 50px;
+}
+.services h1, .services h4{
+    color: #4c4c4c;
+    padding-top: 20px 0 0 20px;  
+}
+.services h4{
+    margin-top: 30px;
+}
+.services p{
+    font-size: 14px;
+    padding-bottom: 40px;
+    color: #737373;
+}
+.services i{
+    height: 80px;
+    width: 80px;
+    font-size: 35px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #d34747;
+    color: white;
+}
+.services {
+    margin-top: 30px;
+
+}
+.services p{
+    margin-top: 20px;
+}
+@media(max-width:768px){
+    .services {
+        padding: 50px;
+        margin-top: 50px;
+    }
+}
+
+/*------------sales section begin here-----------*/
+
+.sales{
+    padding: 150px 50px 60px 80px;
+    min-height: 600px;
+    margin-top: 150px;
+    background-color: #222220;
+}
+.sales #left-side img{
+    height: 150px;
+    width: 400px;
+    min-height: 300px;
+    display: inline-block;
+    margin-left: 25px;
+}
+.sales #right-side{
+    margin-bottom: 50px;
+    color: white;
+    border-left: 1px solid white;
+}
+.sales #right-side h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+
+}
+.sales #right-side p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 20px;
+}
+@media(max-width: 768px){
+    .sales{
+          padding:30px;
+          min-height: 500px;
+          margin-top: -10px;
+    }
+    .sales #right-side h1{
+        font-size: 30px;
+    }
+}
+
+
+/*--------------pricing section css-----------------*/
+
+
+.pricing{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: rgb(255, 255, 255) ;
+
+}
+.pricing h2, .pricing p{
+    color: #222220;
+
+}
+.pricing p{
+    padding-bottom: 40px ;
+    padding-top: 20px;
+
+}
+.pricing .packages{
+    padding: 30px;
+    border: 1px solid #4b4b4b;
+    background-color: #222220;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.packages li{
+    display: block;
+    padding: 5px;
+}
+.packages h4,
+.packages b{
+    color: white;
+}
+
+.packages p,
+.packages li{
+    color: white;
+}
+
+.packages h1{
+    color: #d34747;
+}
+.packages button{
+    margin-top: 10px;
+}
+.row h2{
+    font-size: 45px !important;
+    margin-top: 100px !important;
+}
+ 
+@media(max-width:546px){
+
+    .pricing{
+        padding: 50px 0px;
+    }
+    .packages{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*----------------------mission section------------*/
+
+.mission{
+    padding: 80px;
+    min-height: 600px;
+    padding-top: 120px;
+    background-color: #222220;
+    color: white;
+    
+}
+.mission #left-side{
+    margin-bottom: 50px;
+    border-left: 1px solid white;
+
+}
+.mission #left-side h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.mission #left-side p{
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+    color: rgb(177, 177, 177);
+}
+.mission #right-side img{
+    min-height: 300px;
+    width: 450px;
+    margin-left: 100px;
+}
+@media (max-width: 834px){
+    .mission {
+        padding: 80px;
+        min-height: 600px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mission #right-side img{
+        margin-top: 60px;
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .mission #left-side h1{
+        font-size: 17px;
+    }
+}
+
+/*  ------------------- client section -------------------*/
+
+.client{
+
+    
+    padding: 50px 0px 80px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+.client h2{
+    color: #222220;
+    font-size: 60px !important;
+}
+.client p{
+    padding-bottom: 40px;
+}
+.client img{
+    width: 200px;
+    cursor: pointer;
+    margin: 80px 0px;
+}
+@media (max-width:768px){
+    .client{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/*  ------------------- Team section -------------------*/
+
+
+.team {
+    padding: 50px;
+    text-align: center;
+    background-color: #222220;
+
+}
+.team b,
+h2,
+h4{
+    margin: 20px 0px 20px;
+    color: white;
+}
+.team b{
+    font-weight: 600;
+    color: rgb(228, 228, 228) !important;
+}
+.team p{
+    color: rgb(151, 151, 151);
+}
+.team img{
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+.team i{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;  
+
+    color: white;
+}
+.team i:hover{
+    background-color: rgb(155, 155, 155) ;
+}
+
+/*---------contact css start here-----------*/
+
+
+.contact {
+      padding: 50px 0px 80px;
+      text-align: center;
+      background-color: white;
+}
+.contact h2{
+    color: black;
+}
+.contact p{
+    padding-bottom: 70px;
+    color: #292929;
+    margin: 20px 0 20px;
+}
+.contact .input-group{
+    margin-bottom: 25px;
+}
+.contact .form-control{
+    border-radius: 10px !important;
+    border-top-left-radius: 0 !important ;
+    border-bottom-left-radius: 0 !important ;
+    
+}
+.contact span{
+    border-radius: 10px !important;
+    border-top-right-radius: 0 !important ;
+    border-bottom-right-radius: 0 !important ;
+}
+.contact .btn{
+    margin-top: -12px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #353535;
+    width: 100%;
+    color: white;
+
+}
+.contact .input-group textarea{
+    border-radius: 10px !important;
+}
+.contact .btn:hover{
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+
+/*---------footer css start here-----------*/
+
+
+.footer {
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    color: white;
+}
+
+.footer input {
+    height: 40px;
+    width: 185px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.footer .btn{
+    padding: 10px 5px 10px;   
+    margin: -3 0 0 5px;
+}
+
+@media(max-width: 768px){
+    .footer .btn{
+        margin: -2px 0px 0px 5px;
+    }
+}
